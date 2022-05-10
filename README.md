@@ -2,7 +2,7 @@
 
 Simple sample file support module for [Collboard.com](https://collboard.com/) created via [@collboard/modules-sdk](https://www.npmjs.com/package/@collboard/modules-sdk).
 
-
+This module just ads support for txt files to showcase how to add file supports.
 
 ## How to create your first module from this template
 
