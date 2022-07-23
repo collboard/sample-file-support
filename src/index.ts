@@ -5,11 +5,12 @@ import {
     string_mime_type_with_wildcard,
     TextArt,
 } from '@collboard/modules-sdk';
-import { Vector } from 'xyzt';
 import textFileIcon from '../assets/text-file-icon.svg';
 import { contributors, description, license, name, repository, version } from '../package.json';
 
-const mimeTypes: string_mime_type_with_wildcard[] = ['text/plain' /* <- Note: For your mime type @see https://www.digipres.org/formats/mime-types/ */ ];
+const mimeTypes: string_mime_type_with_wildcard[] = [
+    'text/plain' /* <- Note: For your mime type @see https://www.digipres.org/formats/mime-types/ */,
+];
 
 declareModule({
     manifest: {
@@ -34,8 +35,7 @@ declareModule({
         return importSystem.registerFileSupport({
             priority: 0,
 
-            async processFile({ file, boardPosition, willCommitArts, next }) {
-              
+            async importFile({ file, boardPosition, willCommitArts, next }) {
                 // Note: Checking that file has supported mime-type.
                 //       You can make any (sync/async) additional checks here and decide to process the file or call next
                 if (!mimeTypes.some((mimeType) => patternToRegExp(mimeType).test(file.type))) {
@@ -47,12 +47,11 @@ declareModule({
                 const textArt = new TextArt(
                     await file.text(),
                     '#009edd',
-                    21 / appState.transform.scale.x,
+                    21 / appState.transform.value.scale.x,
                     false,
                     false,
                     false,
                     'none',
-                    Vector.zero(),
                 );
 
                 centerArts({ arts: [textArt], boardPosition });
