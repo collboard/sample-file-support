@@ -1,9 +1,9 @@
 import {
-    centerArts,
-    declareModule,
-    patternToRegExp,
-    string_mime_type_with_wildcard,
-    TextArt,
+  centerArts,
+  declareModule,
+  patternToRegExp,
+  string_mime_type_with_wildcard,
+  TextArt
 } from '@collboard/modules-sdk';
 import textFileIcon from '../assets/text-file-icon.svg';
 import { contributors, description, license, name, repository, version } from '../package.json';
