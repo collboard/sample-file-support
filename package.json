@@ -1,10 +1,6 @@
 {
     "name": "@collboard/simple-file-support",
-<<<<<<< HEAD
-    "version": "0.3.254",
-=======
     "version": "0.3.259",
->>>>>>> b4fb16f897639828269ebe9f9f936c3c95e675a2
     "description": "Simple sample file support module for Collboard.com",
     "license": "SEE LICENSE IN LICENSE",
     "contributors": [
