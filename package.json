@@ -2,7 +2,7 @@
     "name": "@collboard/simple-file-support",
     "version": "0.3.266",
     "description": "Simple sample file support module for Collboard.com",
-    "license": "SEE LICENSE IN LICENSE",
+    "license": "Apache-2.0",
     "contributors": [
         "Pavol Hejný <pavol.hejny@collboard.com> (https://collboard.com/-/about/team)"
     ],
