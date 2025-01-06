@@ -20,7 +20,7 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "@collboard/modules-sdk": "35.13.5500",
+        "@collboard/modules-sdk": "35.13.5600",
         "tslint": "6.1.3"
     },
     "funding": [
